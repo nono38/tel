@@ -10,10 +10,10 @@ control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_AB, EventBusValue.MICROBIT_BUT
 control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_A, EventBusValue.MICROBIT_BUTTON_EVT_DOWN, function () {
     radio.sendNumber(1)
 })
-input.onGesture(Gesture.TiltLeft, function () {
-    radio.sendNumber(2)
-})
 control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_B, EventBusValue.MICROBIT_BUTTON_EVT_UP, function () {
+    radio.sendNumber(4)
+})
+input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     radio.sendNumber(4)
 })
 control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_B, EventBusValue.MICROBIT_BUTTON_EVT_DOWN, function () {
